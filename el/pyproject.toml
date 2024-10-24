@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "entropy_labs"
+name = "el"
 version = "0.1.2"
 description = "Entropy Labs' Sentinel is an agent control plane that enables efficient oversight of thousands of parallel-running agents."
 authors = [
@@ -37,4 +37,4 @@ packages = ["el"]
 "el.supervision.inspect_ai" = ["**/*.py"]
 
 [project.entry-points.inspect_ai]
-entropy_labs = "el.supervision.inspect_ai._registry"
+el = "el.supervision.inspect_ai._registry"
